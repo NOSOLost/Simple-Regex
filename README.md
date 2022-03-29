@@ -28,10 +28,10 @@ A crued, simple regex library implemented in C++.
 |\ |Escapes the next character.|
 
 > You can use it to escapes character `[ ] ^ * + ? { } ( ) . \` and normal escapse character like `n t 0` in string.
->>
->> NOTICE: For normal escapse character, use `\ + character`. For example, use `"\n"` to represent newline.
->> 
->> For character defined in Grammar, use `\\ + character`. for example, use `"\\\\"` to represent `\`  and `"\\["` to represent`[`   
+>
+> NOTICE: For normal escapse character, use `\ + character`. For example, use `"\n"` to represent newline.
+> 
+> For character defined in Grammar, use `\\ + character`. for example, use `"\\\\"` to represent `\`  and `"\\["` to represent`[`   
 
 ## Usage
 *class Regex*
