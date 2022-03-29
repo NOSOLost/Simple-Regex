@@ -75,5 +75,4 @@ match type
 
 + **Convert NFA to DFA**
 
-> + *All of the features listed above are still a long way from being implemented.*
-> + *But that's probably less than 20 years.*
+> + *All of the features listed above are still a long way (very long) from being implemented.*
