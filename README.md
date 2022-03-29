@@ -3,8 +3,6 @@
 ## **Introduction**
 A crued, simple regex library implemented in C++.
 
----
-
 ## **Supoorted Grammar**
 |Meta charcter|Function|
 |:----:|----|
@@ -35,8 +33,6 @@ A crued, simple regex library implemented in C++.
 >> 
 >> For character defined in Grammar, use `\\ + character`. for example, use `"\\\\"` to represent `\`  and `"\\["` to represent`[`   
 
----
-
 ## Usage
 *class Regex*
 + Generate regex
@@ -49,37 +45,35 @@ match type
 + search : Success when the character from the begining of the string match success 
 + only support ASCLL
 
-```Regex regex("a*"), regex_match("aab") => fail, regex_search("aab") => "aa"  ```
+> ```Regex regex("a*"), regex_match("aab") => fail, regex_search("aab") => "aa"  ```
 
-```Regex regex("a*"), regex_match("aaa") => "aaa", regex_search("aaab") => "aaa"  ``` (greedy)
-
----
+> ```Regex regex("a*"), regex_match("aaa") => "aaa", regex_search("aaab") => "aaa"  ``` (greedy)
 
 ## **Features that may added in the future**
-> +
-> |Shorthand|Description|
-> |:----:|----|
-> |.|Any character except new line|
-> |\w|Matches alphanumeric characters: `[a-zA-Z0-9_]`|
-> |\W|Matches non-alphanumeric characters: `[^\w]`|
-> |\d|Matches digits: `[0-9]`|
-> |\D|Matches non-digits: `[^\d]`|
-> |\s|Matches whitespace characters: `[\t\n\f\r\p{Z}]`|
-> |\S|Matches non-whitespace characters: `[^\s]`|
++
+|Shorthand|Description|
+|:----:|----|
+|.|Any character except new line|
+|\w|Matches alphanumeric characters: `[a-zA-Z0-9_]`|
+|\W|Matches non-alphanumeric characters: `[^\w]`|
+|\d|Matches digits: `[0-9]`|
+|\D|Matches non-digits: `[^\d]`|
+|\s|Matches whitespace characters: `[\t\n\f\r\p{Z}]`|
+|\S|Matches non-whitespace characters: `[^\s]`|
 
-> +
-> |Symbol|Description|
-> |:----:|----|
-> |?=|Positive Lookahead|
-> |?!|Negative Lookahead|
-> |?<=|Positive Lookbehind|
-> |?<!|Negative Lookbehind|
-> |^|Matches the beginning of the input.|
-> |$|Matches the end of the input.|
++
+|Symbol|Description|
+|:----:|----|
+|?=|Positive Lookahead|
+|?!|Negative Lookahead|
+|?<=|Positive Lookbehind|
+|?<!|Negative Lookbehind|
+|^|Matches the beginning of the input.|
+|$|Matches the end of the input.|
 
-> + **Optional Greedy and Lazy Matching**
++ **Optional Greedy and Lazy Matching**
 
-> + **Convert NFA to DFA**
++ **Convert NFA to DFA**
 
 > + *All of the features listed above are still a long way from being implemented.*
 > + *But that's probably less than 20 years.*
