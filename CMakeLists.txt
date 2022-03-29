@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 #set(BOOST_INCLUDE ) #boost library
-set(PCC_INCLUDE ./input ./lexer ./pcc_header ./demo)
+set(PCC_INCLUDE ./input ./regex ./pcc_header ./demo)
 set(INCLUDE_LISTS ${PCC_INCLUDE} ${BOOST_INCLUDE})
 include_directories(${INCLUDE_LISTS})
 
