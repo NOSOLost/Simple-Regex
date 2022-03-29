@@ -64,7 +64,7 @@ int main()
             return std::make_pair("", size_t(0));
         });
 
-    println("Success");
+    println("Success\n");
 }
 
 void see_result(const Char* regex_str, const Char* beg, const Char* end, bool use_match)
